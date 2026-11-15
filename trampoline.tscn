@@ -1,25 +1,20 @@
 [gd_scene format=3 uid="uid://i5d5xskvsa37"]
 
+[ext_resource type="Texture2D" uid="uid://xh7cjh7mt2at" path="res://tileset.webp" id="1_d0j4r"]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_stkbm"]
-size = Vector2(32, 8)
+size = Vector2(79, 15)
 
-[sub_resource type="Gradient" id="Gradient_woddn"]
-colors = PackedColorArray(0, 0, 0, 1, 1, 0.5019608, 0, 1)
-
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_v5unc"]
-gradient = SubResource("Gradient_woddn")
-width = 32
-height = 8
-fill = 1
-fill_from = Vector2(0.5130152, 0)
-fill_to = Vector2(0.5021692, 0.637744)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ry2dd"]
+atlas = ExtResource("1_d0j4r")
+region = Rect2(104, 368, 80, 16)
 
 [node name="Trampoline" type="StaticBody2D" unique_id=525137133]
-constant_linear_velocity = Vector2(0, -2000)
+constant_linear_velocity = Vector2(0, -3000)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1429613047]
 shape = SubResource("RectangleShape2D_stkbm")
 debug_color = Color(0.9807065, 0, 0.38138524, 0.41960785)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=636469663]
-texture = SubResource("GradientTexture2D_v5unc")
+texture = SubResource("AtlasTexture_ry2dd")

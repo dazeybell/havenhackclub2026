@@ -14,6 +14,8 @@ func hi():
 	count += 1
 	pass
 
+func reset():
+	count=0
 #//open command prompt
 #winget install --id Git.Git -e --source winget
 #//restart command prompt

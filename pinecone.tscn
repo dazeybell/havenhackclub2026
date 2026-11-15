@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://bsenpylddxdjm"]
 
 [ext_resource type="Script" uid="uid://c4owrgw8g50uq" path="res://pinecone.gd" id="1_u1okx"]
-[ext_resource type="Texture2D" uid="uid://cgwg2fxakmkk5" path="res://icon.svg" id="2_ry2dd"]
+[ext_resource type="Texture2D" uid="uid://xh7cjh7mt2at" path="res://tileset.webp" id="2_u1okx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
+atlas = ExtResource("2_u1okx")
+region = Rect2(144, 288, 48, 48)
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_stkbm"]
 radius = 32.0
@@ -11,8 +15,7 @@ height = 88.0
 script = ExtResource("1_u1okx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=2038750890]
-scale = Vector2(0.55, 0.55)
-texture = ExtResource("2_ry2dd")
+texture = SubResource("AtlasTexture_5vw27")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=30812697]
 shape = SubResource("CapsuleShape2D_stkbm")
