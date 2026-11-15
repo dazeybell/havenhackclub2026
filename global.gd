@@ -1,6 +1,6 @@
 extends Node
 
-
+var your_name: String = "Athena"
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -12,5 +12,10 @@ func _process(delta: float) -> void:
 var count  = 0
 func hi():
 	count += 1
-	print("global: ", count)
 	pass
+
+#//open command prompt
+#winget install --id Git.Git -e --source winget
+#//restart command prompt
+#git config --global user.name "Your Name"
+#git config --global user.email "your.email@example.com"
